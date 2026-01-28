@@ -1,33 +1,28 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+//import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  var year=2026
+  var greet='react project'
+  var isAvailable = true
+
+  var student = {
+    id: 1,
+    name: 'manoj',
+    city: 'Ahmedabad'
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <h1>WELCOME</h1>
+    <h2>{greet}</h2>
+    <h3>{year}</h3>
+    <p>is availabe???{isAvailable == true ? 'TRUE':'FALSE'}</p>
+    <h2>ID: {student.id}</h2>
+    <h2>Name: {student.name}</h2>
+    <h2>city: {student.city}</h2>
     </>
   )
 }
