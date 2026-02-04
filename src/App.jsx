@@ -14,14 +14,24 @@ import { MapDemo7 } from './components/MapDemo7'
 import { MapDemo8 } from './components/MapDemo8'
 import { MapDemo9 } from './components/MapDemo9'
 import { MapDemo10 } from './components/MapDemo10'
+import { Route, Routes } from 'react-router-dom'
+import { NetflixHome } from './components/NetflixHome'
+import { Navbar } from './components/Navbar'
+import { NetflixMovies } from './components/NetflixMovies'
+import { NetflixShows } from './components/NetflixShows'
+import { HomeComponent } from './components/HomeComponent'
 //import './App.css'
 
 function App() {
   return (
     <>
-    <HeaderComponent></HeaderComponent>
-    <MapDemo10></MapDemo10>
-    <FooterComponent></FooterComponent>
+    <Navbar></Navbar>
+    <Routes>
+      <Route path='/' element={<HomeComponent/>}></Route>
+      <Route path='/NetflixHome' element={<NetflixHome/>}></Route>
+      <Route path='/NetflixShows' element={<NetflixShows/>}></Route>
+      <Route path='/NetflixMovies' element={<NetflixMovies/>}></Route>
+    </Routes>
     </>
   )
 }
