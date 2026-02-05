@@ -2,7 +2,7 @@ import React from 'react'
 
 export const MapDemo6 = () => {
   let project_status = [
-    {taskId:101,projectTaskName:'market Researcher',assignTo:'Ansh j.',priority:'high',dueDate:'10-feb-2026',completion:100},
+    {taskId:101,projectTaskName:'market Researcher',assignTo:'Ansh j.',priority:'high',dueDate:'10-feb-2026',completion:100,},
     {taskId:102,projectTaskName:'UI/UX Wireframes',assignTo:'Mike k.',priority:'medium',dueDate:'15-feb-2026',completion:45},
     {taskId:103,projectTaskName:'API Integration',assignTo:'Leo T.',priority:'high',dueDate:'30-feb-2026',completion:85},
     {taskId:104,projectTaskName:'Beta Testing',assignTo:'Sarah J.',priority:'low',dueDate:'1-march-2026',completion:10},

@@ -33,6 +33,12 @@ export const Navbar = () => {
             <li className='nav-item'>
               <Link className='nav-link' to='/NetflixMovies'>Movies</Link>
             </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/PlayerHome'>favorite player</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/IPLHome'>IPL</Link>
+            </li>
           </ul>
         </div>
       </nav>

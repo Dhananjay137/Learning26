@@ -22,6 +22,9 @@ import { NetflixShows } from './components/NetflixShows'
 import { HomeComponent } from './components/HomeComponent'
 import { ErrorNotFound } from './components/ErrorNotFound'
 import { Watch } from './components/Watch'
+import { PlayerHome } from './components/tasks/myFavoritePlayer/PlayerHome'
+import { IPLHome } from './components/tasks/ipl/IPLHome'
+import { TeamDetails } from './components/tasks/ipl/TeamDetails'
 //import './App.css'
 
 function App() {
@@ -35,6 +38,14 @@ function App() {
       <Route path='/NetflixShows' element={<NetflixShows/>}></Route>
       <Route path='/NetflixMovies' element={<NetflixMovies/>}></Route>
       <Route path='/Watch/:name' element={<Watch/>}></Route>
+
+      {/*my favorite player */}
+      <Route path='/PlayerHome' element={<PlayerHome/>}></Route>
+
+      {/*IPL */}
+      <Route path='/IPLHome' element={<IPLHome/>}></Route>
+      <Route path='/TeamDetails/:teamName' element={<TeamDetails/>}></Route>
+
     </Routes>
     </>
   )
