@@ -25,6 +25,10 @@ import { Watch } from './components/Watch'
 import { PlayerHome } from './components/tasks/myFavoritePlayer/PlayerHome'
 import { IPLHome } from './components/tasks/ipl/IPLHome'
 import { TeamDetails } from './components/tasks/ipl/TeamDetails'
+import { FunctionDemo1 } from './components/FunctionDemo1'
+import { UseStateDemo1 } from './components/UseStateDemo1'
+import { UseStateDemo2 } from './components/UseStateDemo2'
+import { UseStateDemo3 } from './components/UseStateDemo3'
 //import './App.css'
 
 function App() {
@@ -38,6 +42,10 @@ function App() {
       <Route path='/NetflixShows' element={<NetflixShows/>}></Route>
       <Route path='/NetflixMovies' element={<NetflixMovies/>}></Route>
       <Route path='/Watch/:name' element={<Watch/>}></Route>
+      <Route path='/FunctionDemo1' element={<FunctionDemo1/>}></Route>
+      <Route path='/UseStateDemo1' element={<UseStateDemo1/>}></Route>
+      <Route path='/UseStateDemo2' element={<UseStateDemo2/>}></Route>
+      <Route path='/UseStateDemo3' element={<UseStateDemo3/>}></Route>
 
       {/*my favorite player */}
       <Route path='/PlayerHome' element={<PlayerHome/>}></Route>

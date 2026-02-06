@@ -39,6 +39,18 @@ export const Navbar = () => {
             <li className='nav-item'>
               <Link className='nav-link' to='/IPLHome'>IPL</Link>
             </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/FunctionDemo1'>Function Demo 1</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/UseStateDemo1'>useStae Demo 1</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/UseStateDemo2'>useStae Demo 2</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/UseStateDemo3'>useStae Demo 3</Link>
+            </li>
           </ul>
         </div>
       </nav>
