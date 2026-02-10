@@ -57,6 +57,9 @@ export const Navbar = () => {
             <li className='nav-item'>
               <Link className='nav-link' to='/InputDemo'>Input Demo</Link>
             </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/InputComponent'>Input Component</Link>
+            </li>
           </ul>
         </div>
       </nav>
