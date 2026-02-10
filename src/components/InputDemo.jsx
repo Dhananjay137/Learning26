@@ -9,7 +9,7 @@ export const InputDemo = () => {
   }
   const handleAge = (event) => {
     console.log(event)
-    setAge(event.target.age)
+    setAge(event.target.value)
   }
   return (
     <div>

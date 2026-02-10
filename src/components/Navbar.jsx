@@ -34,10 +34,10 @@ export const Navbar = () => {
               <Link className='nav-link' to='/NetflixMovies'>Movies</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/PlayerHome'>favorite player</Link>
+              <Link className='nav-link' to='/PlayerHome'>favorite player{`(task)`}</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/IPLHome'>IPL</Link>
+              <Link className='nav-link' to='/IPLHome'>IPL{`(task)`}</Link>
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/FunctionDemo1'>Function Demo 1</Link>
