@@ -60,6 +60,12 @@ export const Navbar = () => {
             <li className='nav-item'>
               <Link className='nav-link' to='/InputComponent'>Input Component</Link>
             </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/PropertyHome'>Property Home</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/PropertyWishlist'>Property Wishlist</Link>
+            </li>
           </ul>
         </div>
       </nav>
