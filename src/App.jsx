@@ -29,6 +29,7 @@ import { FunctionDemo1 } from './components/FunctionDemo1'
 import { UseStateDemo1 } from './components/UseStateDemo1'
 import { UseStateDemo2 } from './components/UseStateDemo2'
 import { UseStateDemo3 } from './components/UseStateDemo3'
+import { Employees } from './components/Employees'
 //import './App.css'
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
       <Route path='/UseStateDemo1' element={<UseStateDemo1/>}></Route>
       <Route path='/UseStateDemo2' element={<UseStateDemo2/>}></Route>
       <Route path='/UseStateDemo3' element={<UseStateDemo3/>}></Route>
+      <Route path='/Employees' element={<Employees/>}></Route>
 
       {/*my favorite player */}
       <Route path='/PlayerHome' element={<PlayerHome/>}></Route>
