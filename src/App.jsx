@@ -35,6 +35,10 @@ import { InputComponent } from './components/tasks/inputTask/InputComponent'
 import { PropertyHome } from './components/tasks/propsTask/PropertyHome'
 import { PropertyWishlist } from './components/tasks/propsTask/PropertyWishlist'
 import { InputDemo2 } from './components/InputDemo2'
+import { FormDemo1 } from './components/form/FormDemo1'
+import { FormDemo2 } from './components/form/FormDemo2'
+import { FormDemo3 } from './components/form/FormDemo3'
+import { FormDemo4 } from './components/form/FormDemo4'
 //import './App.css'
 
 function App() {
@@ -56,9 +60,15 @@ function App() {
       <Route path='/InputComponent' element={<InputComponent/>}></Route>
       <Route path='/InputDemo2' element={<InputDemo2/>}></Route>
 
+      <Route path='/FormDemo1' element={<FormDemo1/>}></Route>
+      <Route path='/FormDemo2' element={<FormDemo2/>}></Route>
+      <Route path='/FormDemo3' element={<FormDemo3/>}></Route>
+      <Route path='/FormDemo4' element={<FormDemo4/>}></Route>
+
+
       {/* input task */}
       <Route path='/InputDemo' element={<InputDemo/>}></Route>
-      
+
       {/* props task */}
       <Route path='/PropertyHome' element={<PropertyHome/>}></Route>
       <Route path='/PropertyWishlist' element={<PropertyWishlist/>}></Route>

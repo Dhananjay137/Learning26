@@ -33,13 +33,13 @@ export const Navbar = () => {
             <li className='nav-item'>
               <Link className='nav-link' to='/NetflixMovies'>Movies</Link>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <Link className='nav-link' to='/PlayerHome'>favorite player{`(task)`}</Link>
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/IPLHome'>IPL{`(task)`}</Link>
-            </li>
-            <li className='nav-item'>
+            </li> */}
+            {/* <li className='nav-item'>
               <Link className='nav-link' to='/FunctionDemo1'>Function Demo 1</Link>
             </li>
             <li className='nav-item'>
@@ -50,10 +50,10 @@ export const Navbar = () => {
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/UseStateDemo3'>useStae Demo 3</Link>
-            </li>
-            <li className='nav-item'>
+            </li> */}
+            {/* <li className='nav-item'>
               <Link className='nav-link' to='/Employees'>Employees</Link>
-            </li>
+            </li> */}
             <li className='nav-item'>
               <Link className='nav-link' to='/InputDemo'>Input Demo</Link>
             </li>
@@ -68,6 +68,18 @@ export const Navbar = () => {
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/InputDemo2'>Input Demo 2</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/FormDemo1'>Form Demo 1</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/FormDemo2'>Form Demo 2</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/FormDemo3'>Form Demo 3</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/FormDemo4'>Form Demo 4</Link>
             </li>
           </ul>
         </div>
