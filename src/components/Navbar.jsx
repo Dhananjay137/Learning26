@@ -61,6 +61,9 @@ export const Navbar = () => {
               <Link className='nav-link' to='/InputComponent'>Input Component</Link>
             </li>
             <li className='nav-item'>
+              <Link className='nav-link' to='/InputComponent2'>Input Component 2</Link>
+            </li>
+            <li className='nav-item'>
               <Link className='nav-link' to='/PropertyHome'>Property Home</Link>
             </li>
             <li className='nav-item'>

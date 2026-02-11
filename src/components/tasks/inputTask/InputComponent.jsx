@@ -116,16 +116,16 @@ export const InputComponent = () => {
       <h3>continue....</h3>
       <p>gender: {gender||'none'}</p>
       <label>
-        <input type="radio" value='male' checked={gender == 'male'} onChange={(event) => {handleGender(event)}}/>Male
+        <input type="radio" value='male' name='gender' onChange={(event) => {handleGender(event)}}/>Male
       </label>
       <label>
-        <input type="radio" value='female' checked={gender == 'female'} onChange={(event) => {handleGender(event)}}/>Female
+        <input type="radio" value='female' name='gender' onChange={(event) => {handleGender(event)}}/>Female
       </label>
       <br />
       <p>meal: {meals.join(", ") || 'none'}</p>
-      <label><input type="checkbox" value='breakfast' onChange={(event) => {handleMeal(event)}} />breakfast</label>
-      <label><input type="checkbox" value='lunch' onChange={(event) => {handleMeal(event)}} />lunch</label>
-      <label><input type="checkbox" value='dinner' onChange={(event) => {handleMeal(event)}} />dinner</label>
+      <label><input type="checkbox" value='breakfast' name='meal' onChange={(event) => {handleMeal(event)}} />breakfast</label>
+      <label><input type="checkbox" value='lunch' name='meal' onChange={(event) => {handleMeal(event)}} />lunch</label>
+      <label><input type="checkbox" value='dinner' name='meal' onChange={(event) => {handleMeal(event)}} />dinner</label>
       <br />
     </div>
   )
