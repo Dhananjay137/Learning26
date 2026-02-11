@@ -66,6 +66,9 @@ export const Navbar = () => {
             <li className='nav-item'>
               <Link className='nav-link' to='/PropertyWishlist'>Property Wishlist</Link>
             </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/InputDemo2'>Input Demo 2</Link>
+            </li>
           </ul>
         </div>
       </nav>

@@ -34,6 +34,7 @@ import { InputDemo } from './components/InputDemo'
 import { InputComponent } from './components/tasks/inputTask/InputComponent'
 import { PropertyHome } from './components/tasks/propsTask/PropertyHome'
 import { PropertyWishlist } from './components/tasks/propsTask/PropertyWishlist'
+import { InputDemo2 } from './components/InputDemo2'
 //import './App.css'
 
 function App() {
@@ -52,8 +53,13 @@ function App() {
       <Route path='/UseStateDemo2' element={<UseStateDemo2/>}></Route>
       <Route path='/UseStateDemo3' element={<UseStateDemo3/>}></Route>
       <Route path='/Employees' element={<Employees/>}></Route>
-      <Route path='/InputDemo' element={<InputDemo/>}></Route>
       <Route path='/InputComponent' element={<InputComponent/>}></Route>
+      <Route path='/InputDemo2' element={<InputDemo2/>}></Route>
+
+      {/* input task */}
+      <Route path='/InputDemo' element={<InputDemo/>}></Route>
+      
+      {/* props task */}
       <Route path='/PropertyHome' element={<PropertyHome/>}></Route>
       <Route path='/PropertyWishlist' element={<PropertyWishlist/>}></Route>
 
