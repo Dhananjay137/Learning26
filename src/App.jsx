@@ -46,6 +46,8 @@ import { FormTask5 } from './components/tasks/form/FormTask5'
 import { FormDemo2 } from './components/form/FormDemo2'
 import { FormDemo3 } from './components/form/FormDemo3'
 import { FormDemo4 } from './components/form/FormDemo4'
+import { FormTask6 } from './components/tasks/form/FormTask6'
+import { FormTask7 } from './components/tasks/form/FormTask7'
 //import './App.css'
 
 function App() {
@@ -75,6 +77,8 @@ function App() {
       <Route path='/FormTask3' element={<FormTask3/>}></Route>
       <Route path='/FormTask4' element={<FormTask4/>}></Route>
       <Route path='/FormTask5' element={<FormTask5/>}></Route>
+      <Route path='/FormTask6' element={<FormTask6/>}></Route>
+      <Route path='/FormTask7' element={<FormTask7/>}></Route>
 
       <Route path='/InputDemo' element={<InputDemo/>}></Route>
       <Route path='/InputDemo2' element={<InputDemo2/>}></Route>

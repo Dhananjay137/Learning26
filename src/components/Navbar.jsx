@@ -100,6 +100,12 @@ export const Navbar = () => {
             <li className='nav-item'>
               <Link className='nav-link' to='/FormTask5'>Form Task 5</Link>
             </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/FormTask6'>Form Task 6</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/FormTask7'>Form Task 7</Link>
+            </li>
           </ul>
         </div>
       </nav>
