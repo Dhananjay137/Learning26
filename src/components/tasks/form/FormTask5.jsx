@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 
-export const FormDemo7 = () => {
+export const FormTask5 = () => {
   const { register, handleSubmit, formState: { errors } } = useForm({
     mode: "onTouched" // Validates when user leaves the input
   });

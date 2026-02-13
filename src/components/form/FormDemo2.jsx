@@ -1,58 +1,68 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import { useAsyncError } from "react-router-dom";
+import React from 'react'
+import { useForm } from 'react-hook-form'
 
 export const FormDemo2 = () => {
-  const { register, handleSubmit } = useForm();
-  const [userData, setUserData] = useState({});
-  const [isSubmited, setSubmited] = useState(false);
+  const{ register,handleSubmit,formState:{errors} }=useForm()
+  //console.log('errors....',errors)
+
+  const validationSchema = {
+    ageValidator: {
+      required:{
+        value:true,
+        message:'Age is Required'
+      },
+      min:{
+        value:18,
+        message:'minimum age should be 18'
+      },
+      max:{
+        value:60,
+        message:'maximum age should be 60'
+      }
+    },
+    addressValidator:{
+      required:{
+        value:true,
+        message:'address is required'
+      },
+      minLength:{
+        value:5,
+        message:'min 5 char is required'
+      },
+      maxLength:{
+        value:20,
+        message:'max 20 char is accepted**'
+      }
+    }
+  }
 
   const submitHandler = (data) => {
-    console.log('data:',data);
-
-    setUserData(data);
-    setSubmited(true);
-  };
+    alert('form submitted')
+    console.log(data)
+  }
   return (
     <div>
       <h1>FormDemo2</h1>
-      <h2>Register</h2>
       <form onSubmit={handleSubmit(submitHandler)}>
         <div>
           <label>NAME</label>
-          <input type="text" {...register("name")} />
+          <input type='text' {...register('name',{required:{value:true,message:'Name is required'}})}></input>
+          {errors.name && errors.name.message}
         </div>
         <div>
-          <label>GENDER</label> <br />
-          MALE:
-          <input type="radio" value="male" {...register("gender")} /> <br />
-          FEMALE:
-          <input type="radio" value="female" {...register("gender")} /> <br />
+          <label>AGE</label>
+          <input type='text' {...register('age',validationSchema.ageValidator)}></input>
+          {errors.age && errors.age.message}
         </div>
         <div>
-          <label>PHONE</label>
-          <input type="tel" {...register("phone")} />
+          <label>ADD</label>
+          <input type='text' {...register('add',validationSchema.addressValidator)}></input>
+          {errors.add?.message}
         </div>
         <div>
-          <label>EMAIL</label>
-          <input type="email" {...register("email")} />
+          <input type='submit'></input>
         </div>
-        <div>
-          <label>PASSWORD</label>
-          <input type="password" {...register("password")} />
-        </div>
-        <input type="submit"></input>
       </form>
-      {isSubmited == true && (
-        <div>
-          <h1>OUTPUT</h1>
-          <li>NAME:{userData.name}</li>
-          <li>GENDER:{userData.gender}</li>
-          <li>PHONE:{userData.phone}</li>
-          <li>EMAIL:{userData.email}</li>
-          <li>PASSWORD:{userData.password}</li>
-        </div>
-      )}
     </div>
-  );
-};
+  )
+}

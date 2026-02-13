@@ -36,14 +36,14 @@ import { PropertyHome } from './components/tasks/propsTask/PropertyHome'
 import { PropertyWishlist } from './components/tasks/propsTask/PropertyWishlist'
 import { InputDemo2 } from './components/InputDemo2'
 import { FormDemo1 } from './components/form/FormDemo1'
-import { FormDemo2 } from './components/form/FormDemo2'
-import { FormDemo3 } from './components/form/FormDemo3'
-import { FormDemo4 } from './components/form/FormDemo4'
 import { InputComponent2 } from './components/tasks/inputTask/inputComponent2'
 import { InputComponent2V2 } from './components/tasks/inputTask/InputComponent2V2'
-import { FormDemo5 } from './components/form/FormDemo5'
-import { FormDemo6 } from './components/form/FormDemo6'
-import { FormDemo7 } from './components/form/FormDemo7'
+import { FormTask1 } from './components/tasks/form/FormTask1'
+import { FormTask2 } from './components/tasks/form/FormTask2'
+import { FormTask3 } from './components/tasks/form/FormTask3'
+import { FormTask4 } from './components/tasks/form/FormTask4'
+import { FormTask5 } from './components/tasks/form/FormTask5'
+import { FormDemo2 } from './components/form/FormDemo2'
 //import './App.css'
 
 function App() {
@@ -62,20 +62,21 @@ function App() {
       <Route path='/UseStateDemo2' element={<UseStateDemo2/>}></Route>
       <Route path='/UseStateDemo3' element={<UseStateDemo3/>}></Route>
       <Route path='/Employees' element={<Employees/>}></Route>
-      <Route path='/InputComponent' element={<InputComponent/>}></Route>
-      <Route path='/InputDemo2' element={<InputDemo2/>}></Route>
 
       <Route path='/FormDemo1' element={<FormDemo1/>}></Route>
       <Route path='/FormDemo2' element={<FormDemo2/>}></Route>
-      <Route path='/FormDemo3' element={<FormDemo3/>}></Route>
-      <Route path='/FormDemo4' element={<FormDemo4/>}></Route>
-      <Route path='/FormDemo5' element={<FormDemo5/>}></Route>
-      <Route path='/FormDemo6' element={<FormDemo6/>}></Route>
-      <Route path='/FormDemo7' element={<FormDemo7/>}></Route>
 
+      <Route path='/FormTask1' element={<FormTask1/>}></Route>
+      <Route path='/FormTask2' element={<FormTask2/>}></Route>
+      <Route path='/FormTask3' element={<FormTask3/>}></Route>
+      <Route path='/FormTask4' element={<FormTask4/>}></Route>
+      <Route path='/FormTask5' element={<FormTask5/>}></Route>
+
+      <Route path='/InputDemo' element={<InputDemo/>}></Route>
+      <Route path='/InputDemo2' element={<InputDemo2/>}></Route>
 
       {/* input task */}
-      <Route path='/InputDemo' element={<InputDemo/>}></Route>
+      <Route path='/InputComponent' element={<InputComponent/>}></Route>
       <Route path='/InputComponent2' element={<InputComponent2/>}></Route>
       <Route path='/InputComponent2V2' element={<InputComponent2V2/>}></Route>
 

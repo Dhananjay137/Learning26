@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
-export const FormDemo3 = () => {
+export const FormTask2 = () => {
   const {register, handleSubmit} = useForm()
   const [propertyData, setPropertyData] = useState()
   const [isSubmited, setSubmited] = useState(false)
@@ -13,7 +13,7 @@ export const FormDemo3 = () => {
   }
   return (
     <div>
-      <h1>FormDemo3</h1>
+      <h1>FormTask2</h1>
       <h1>Property Details</h1>
       <form onSubmit={handleSubmit(submitHandler)}>
         <div>

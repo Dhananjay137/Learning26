@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 
-export const FormDemo4 = () => {
+export const FormTask3 = () => {
   const { register, handleSubmit } = useForm();
   const [propertyData, setPropertyData] = useState();
   const [isSubmitted, setSubmitted] = useState(false);
@@ -11,10 +11,9 @@ export const FormDemo4 = () => {
     setPropertyData(data);
     setSubmitted(true);
   };
-
   return (
     <div style={{ padding: "20px" }}>
-      <h1>FormDemo4</h1>
+      <h1>FormTask3</h1>
       <h2>Add New Listing</h2>
       <form onSubmit={handleSubmit(submitHandler)}>
         
@@ -69,5 +68,5 @@ export const FormDemo4 = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}

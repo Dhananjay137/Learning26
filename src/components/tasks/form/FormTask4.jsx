@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 
-export const FormDemo6 = () => {
+export const FormTask4 = () => {
   const{ register, handleSubmit,watch, formState:{errors} } = useForm()
   let pwd = watch('password')
 
@@ -15,7 +15,7 @@ export const FormDemo6 = () => {
   }
   return (
     <div>
-      <h1>FormDemo6</h1>
+      <h1>FormTask4</h1>
       <form onSubmit={handleSubmit(submitHandler)}>
         <div>
           <label>NAME</label>
@@ -71,6 +71,7 @@ export const FormDemo6 = () => {
           <label>GENDER</label> <br></br>
           MALE:<input type='radio' value='male' {...register('gender',{required:{value:true,message:'gender is required'}})}></input>
           FEMALE:<input type='radio' value='female' {...register('gender',{required:{value:true,message:'gender is required'}})}></input>
+          {errors.gender?.message}
         </div>
         <div>
           <label>FILE</label>
@@ -104,13 +105,12 @@ export const FormDemo6 = () => {
           <input type='password' {...register('confirmPassword',{required:{value:true,message:'Please comfirm your password'},validate:{
             matchPassword: (value) => value===pwd || 'Password do not match'
           }})}></input>
-
+          {errors.confirmPassword?.message}
         </div>
         <div>
           <input type='submit'></input>
         </div>
       </form>
     </div>
-
   )
 }

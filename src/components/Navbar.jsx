@@ -56,6 +56,9 @@ export const Navbar = () => {
               <Link className='nav-link' to='/InputDemo'>Input Demo</Link>
             </li>
             <li className='nav-item'>
+              <Link className='nav-link' to='/InputDemo2'>Input Demo 2</Link>
+            </li>
+            <li className='nav-item'>
               <Link className='nav-link' to='/InputComponent'>Input Component</Link>
             </li>
             <li className='nav-item'>
@@ -64,15 +67,12 @@ export const Navbar = () => {
             <li className='nav-item'>
               <Link className='nav-link' to='/InputComponent2V2'>Input Component 2V2</Link>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <Link className='nav-link' to='/PropertyHome'>Property Home</Link>
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/PropertyWishlist'>Property Wishlist</Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/InputDemo2'>Input Demo 2</Link>
-            </li>
+            </li> */}
             <li className='nav-item'>
               <Link className='nav-link' to='/FormDemo1'>Form Demo 1</Link>
             </li>
@@ -80,19 +80,19 @@ export const Navbar = () => {
               <Link className='nav-link' to='/FormDemo2'>Form Demo 2</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/FormDemo3'>Form Demo 3</Link>
+              <Link className='nav-link' to='/FormTask1'>Form Task 1</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/FormDemo4'>Form Demo 4</Link>
+              <Link className='nav-link' to='/FormTask2'>Form Task 2</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/FormDemo5'>Form Demo 5</Link>
+              <Link className='nav-link' to='/FormTask3'>Form Task 3</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/FormDemo6'>Form Demo 6</Link>
+              <Link className='nav-link' to='/FormTask4'>Form Task 4</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/FormDemo7'>Form Demo 7</Link>
+              <Link className='nav-link' to='/FormTask5'>Form Task 5</Link>
             </li>
           </ul>
         </div>
