@@ -80,6 +80,12 @@ export const Navbar = () => {
               <Link className='nav-link' to='/FormDemo2'>Form Demo 2</Link>
             </li>
             <li className='nav-item'>
+              <Link className='nav-link' to='/FormDemo3'>Form Demo 3</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/FormDemo4'>Form Demo 4</Link>
+            </li>
+            <li className='nav-item'>
               <Link className='nav-link' to='/FormTask1'>Form Task 1</Link>
             </li>
             <li className='nav-item'>
