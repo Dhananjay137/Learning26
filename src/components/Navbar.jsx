@@ -110,10 +110,10 @@ export const Navbar = () => {
               <Link className='nav-link' to='/ApiDemo1'>Api Demo 1</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/ApiDemo2'>Api Demo 2</Link>
+              <Link className='nav-link' to='/ApiTask1'>Api Task 1</Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/ApiDemo3'>Api Demo 3</Link>
+              <Link className='nav-link' to='/ApiTask2'>Api Task 2</Link>
             </li>
           </ul>
         </div>
