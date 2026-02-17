@@ -48,6 +48,7 @@ import { FormDemo3 } from './components/form/FormDemo3'
 import { FormDemo4 } from './components/form/FormDemo4'
 import { FormTask6 } from './components/tasks/form/FormTask6'
 import { FormTask7 } from './components/tasks/form/FormTask7'
+import { ApiDemo1 } from './components/api/ApiDemo1'
 //import './App.css'
 
 function App() {
@@ -82,6 +83,8 @@ function App() {
 
       <Route path='/InputDemo' element={<InputDemo/>}></Route>
       <Route path='/InputDemo2' element={<InputDemo2/>}></Route>
+
+      <Route path='/ApiDemo1' element={<ApiDemo1/>}></Route>
 
       {/* input task */}
       <Route path='/InputComponent' element={<InputComponent/>}></Route>
