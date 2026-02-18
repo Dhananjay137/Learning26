@@ -53,6 +53,8 @@ import { ApiDemo2 } from './components/api/ApiDemo2'
 import { ApiDemo3 } from './components/api/ApiDemo3'
 import { ApiTask1 } from './components/tasks/apiTask/ApiTask1'
 import { ApiTask2 } from './components/tasks/apiTask/ApiTask2'
+import { OmdbSearch } from './components/api/OmdbSearch'
+import { Details } from './components/api/Details'
 //import './App.css'
 
 function App() {
@@ -91,6 +93,8 @@ function App() {
       <Route path='/ApiDemo1' element={<ApiDemo1/>}></Route>
       <Route path='/ApiDemo2' element={<ApiDemo2/>}></Route>
       <Route path='/ApiDemo3' element={<ApiDemo3/>}></Route>
+      <Route path='/omdb' element={<OmdbSearch/>}></Route>
+      <Route path='/details/:imdbID' element={<Details/>}></Route>
 
       <Route path='/ApiTask1' element={<ApiTask1/>}></Route>
       <Route path='/ApiTask2' element={<ApiTask2/>}></Route>

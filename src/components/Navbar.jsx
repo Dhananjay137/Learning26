@@ -22,7 +22,7 @@ export const Navbar = () => {
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            {/* <li class="nav-item active">
+            <li class="nav-item active">
               <Link className='nav-link' to='/NetflixHome'>NetFilx Home</Link>
             </li>
             <li class="nav-item">
@@ -30,7 +30,7 @@ export const Navbar = () => {
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/NetflixMovies'>Movies</Link>
-            </li> */}
+            </li>
             {/* <li className='nav-item'>
               <Link className='nav-link' to='/PlayerHome'>favorite player{`(task)`}</Link>
             </li>
@@ -114,6 +114,9 @@ export const Navbar = () => {
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/ApiTask2'>Api Task 2</Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/omdb'>OMDB</Link>
             </li>
           </ul>
         </div>
