@@ -1,0 +1,99 @@
+// console.log("app file loaded...")
+
+//----wrong way-----
+// require("./user")
+// const userName = require("./user")
+// const userAge = require("./user")
+
+// console.log(userName)
+// console.log(userAge)
+
+//-----right way to load js file-----
+// const user = require("./user")
+
+// console.log(user)
+// const squre = user.userData(10)
+// console.log('user name',user.userName)
+// console.log('user age',user.userAge)
+// console.log('squre',squre)
+
+//------employee------------
+// const employee = require("./employee")
+// console.log(employee)
+// employee.empData()
+
+// console.log("Employee name",employee?.empName)
+// console.log("Employee salary",employee?.empSalary)
+
+//26 feb
+
+//require express
+const express = require("express") // express module
+
+// create object of express
+const app = express()
+
+//API Creation
+
+//http://localhost:3000/test
+app.get("/test",(req,res) => {
+  console.log("text api called.....")
+  res.send("Test API is called")
+})
+
+const user = {
+  id:1,
+  name:'manoj',
+  age:23,
+  salary:7000
+}
+
+//http://localhost:3000/user
+app.get("/user",(req,res) => {
+  // res.json(user)
+  res.json({
+    message:"user fetched successfully",
+    data:user
+  })
+})
+
+//dummy data
+const users = [
+  {id:1, name:"ajay", age:20},
+  {id:2, name:"om", age:21},
+  {id:3, name:"prakas", age:21}
+]
+
+//http://localhost:3000/users
+app.get("/users",(req,res) => {
+  res.json({
+    message:"users are fetched",
+    data:users
+  })
+})
+
+app.get("/user/:id",(req,res) => {
+
+  const params = req.params.id
+  
+  let found = users.find((user) => user.id == params)
+
+  if(!found){
+    return res.json({
+      message:"user is not found",
+      data:found
+    })
+  }
+
+  res.json({
+    message:"user is found",
+    data:found
+  })
+
+})
+
+//servation createion
+const PORT = 3000
+app.listen(PORT,() => {
+  console.log(`server started on port ${PORT}`)
+})

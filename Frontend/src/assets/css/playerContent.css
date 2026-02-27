@@ -1,0 +1,62 @@
+/* Main container for the entire content component */
+.content-container {
+  display: flex;
+  flex-direction: column; /* Stacks vertically by default on mobile */
+  gap: 30px;              /* Space between the image and the text block */
+  padding: 20px;          /* Inner padding */
+  max-width: 1200px;      /* Prevents content from getting too wide on large screens */
+  margin: 0 auto;         /* Centers the content block horizontally */
+  color: #333;            /* Default text color */
+}
+
+/* Styles for the image itself */
+.dhoni-image {
+  height: auto;           /* Maintain aspect ratio */
+  width: 100%;            /* Image takes full width of its container */
+  max-width: 400px;       /* Constrains the max width of the image */
+  max-height: 450px;
+  border-radius: 10px;    /* Softens the corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adds depth */
+  display: block;         /* Ensures proper alignment */
+  margin: 0 auto;         /* Centers image on mobile screens */
+}
+
+/* Container for all the text sections (H1s and ULs) */
+.text-content-wrapper {
+  flex-grow: 1;           /* Allows this block to take up remaining space in a flex layout */
+}
+
+/* Styling for all H1 headings within the content */
+.text-content-wrapper h1 {
+  color: #000080;         /* Navy blue heading color (Team India blue) */
+  border-bottom: 2px solid #FFC700; /* Yellow underline accent (CSK yellow) */
+  padding-bottom: 5px;    /* Space between text and the line */
+  margin-top: 30px;       /* Space above each main section title */
+  font-size: 2rem;
+}
+
+/* Styling for all unordered lists (bullet points) */
+.text-content-wrapper ul {
+  list-style-type: disc;  /* Use standard bullet points */
+  margin-left: 20px;      /* Indentation for the list */
+  padding: 0;
+}
+
+/* Styling for individual list items */
+.text-content-wrapper li {
+  margin-bottom: 10px;    /* Space between bullet points */
+  line-height: 1.4;       /* Better readability for long text */
+  font-size: 1.1rem;      /* Slightly larger font for list items */
+}
+
+/* --- Desktop Layout (Image next to Text) --- */
+@media (min-width: 768px) {
+  .content-container {
+    flex-direction: row;  /* Arranges image and text side-by-side on desktop */
+  }
+
+  .dhoni-image {
+    /* Resets mobile centering and fits into the flex layout */
+    margin: 0; 
+  }
+}
