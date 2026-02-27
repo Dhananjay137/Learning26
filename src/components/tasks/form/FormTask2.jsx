@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 
 export const FormTask2 = () => {
   const {register, handleSubmit} = useForm()
-  const [propertyData, setPropertyData] = useState()
+  const [propertyData, setPropertyData] = useState({})
   const [isSubmited, setSubmited] = useState(false)
 
   const submitHandler = (data) => {
@@ -51,7 +51,7 @@ export const FormTask2 = () => {
             <h3>TYPE: {propertyData.type}</h3>
             <h3>CITY: {propertyData.city}</h3>
             <h3>STATUS: {propertyData.status}</h3>
-            <h3>MEAL: {propertyData.meal.map((m) => <li>{m}</li>)}</h3>
+            <h3>MEAL: {!propertyData.meal ? <li>not selected</li> : propertyData?.meal?.map((m) => { return(<li>{m}</li>)})}</h3>
           </div>
         )
       }
