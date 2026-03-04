@@ -5,6 +5,7 @@ connectDB() // connect to database
 
 // create object of express
 const app = express()
+app.use(express.json()) // to parse json data in request body
 
 //require routes
 const productRoutes = require("./src/routes/ProductRoute")
